@@ -5,4 +5,4 @@ int main(){
    printf("\n Enter any one operator like +, -, *, / : ");
    scanf("%c", &Operator);
   
-   }
+}
