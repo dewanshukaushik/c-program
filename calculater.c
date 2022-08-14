@@ -4,5 +4,7 @@ int main(){
    float num1, num2, result = 0;
    printf("\n Enter any one operator like +, -, *, / : ");
    scanf("%c", &Operator);
-  
+   printf("Enter the values of Operands num1 and num2 \n : ");
+   scanf("%f%f", &num1, &num2);
+   switch(Operator
 }
