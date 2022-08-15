@@ -8,5 +8,5 @@ int main(){
    scanf("%f%f", &num1, &num2);
    switch(Operator){
       case '+': result = num1 + num2;
-        
+         break;
    }
