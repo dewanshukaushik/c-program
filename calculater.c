@@ -7,6 +7,7 @@ int main(){
    printf("Enter the values of Operands num1 and num2 \n : ");
    scanf("%f%f", &num1, &num2);
    switch(Operator){
+      //for addition
       case '+': result = num1 + num2;
          break;
          //for subtract
