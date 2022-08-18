@@ -13,7 +13,7 @@ int main(){
          //for subtract
       case '-': result = num1 - num2;
          break;
-         //for division
+         //for division 
          case '*': result = num1 * num2;
          break;
    }
