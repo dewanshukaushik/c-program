@@ -16,5 +16,5 @@ int main(){
          //for division 
          case '*': result = num1 * num2;
          break;
-         
+         // for multi
    }
