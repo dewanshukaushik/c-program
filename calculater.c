@@ -14,11 +14,11 @@ int main(){
       case '-': result = num1 - num2;
          break;
          //for division 
-         case '/': result = num1 / num2;
+      case '/': result = num1 / num2;
          break;
          // for multiPlication
-          case '*': result = num1 * num2;
+        case '*': result = num1 * num2;
          break;
-     
+        default: printf("\n Invalid Operator ");
    
    }
