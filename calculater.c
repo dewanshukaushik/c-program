@@ -19,6 +19,7 @@ int main(){
          // for multiPlication
         case '*': result = num1 * num2;
          break;
-        default: printf("\n Invalid Operator ");
-   
+            default: printf("\n Invalid Operator ");
    }
+   printf("The value = %f", result);
+ 
