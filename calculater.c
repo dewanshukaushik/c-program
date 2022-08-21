@@ -22,4 +22,5 @@ int main(){
             default: printf("\n Invalid Operator ");
    }
    printf("The value = %f", result);
- 
+   return 0;
+}
