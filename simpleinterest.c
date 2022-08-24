@@ -9,5 +9,6 @@
     printf("ENTER TH TIME");
     scanf("%d,%d,%d", &P &R &T);
     SI=P*R*T/100;
-    printf("SIMPLE INTEREST")
+    printf("SIMPLE INTEREST" &SI);
+    getch()
  }
