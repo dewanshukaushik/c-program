@@ -10,8 +10,11 @@
     scanf("%f",&R);
     printf("\nENTER TH TIME ");
     scanf("%f",&T);
+
     SI=P*R*T;
     SI=SI/100;
+
     printf("SIMPLE INTEREST= %f",SI);
-    return;
+
+    return 0;
  }
