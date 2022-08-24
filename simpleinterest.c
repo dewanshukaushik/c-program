@@ -5,10 +5,10 @@
     int P,R,T ;
     float SI;
     printf("ENTER THE PRINCIPLE VALUE");
-    printf("ENTER THE INTEREST RATE");
-    printf("ENTER TH TIME");
-    scanf("%d,%d,%d", &P &R &T);
+    printf("\nENTER THE INTEREST RATE");
+    printf("\nENTER TH TIME");
+    scanf("%d%d%d",&P,&R,&T);
     SI=P*R*T/100;
-    printf("SIMPLE INTEREST" &SI);
-    getch()
+    printf("SIMPLE INTEREST= %f",&SI);
+    getch();
  }
