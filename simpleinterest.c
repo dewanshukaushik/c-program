@@ -2,13 +2,17 @@
 #include<conio.h>
  void main()
  {
-    int P,R,T ;
-    float SI;
-    printf("ENTER THE PRINCIPLE VALUE");
-    printf("\nENTER THE INTEREST RATE");
-    printf("\nENTER TH TIME");
-    scanf("%d%d%d",&P,&R,&T);
-    SI=P*R*T/100;
+    float P,R,T,SI ;
+   
+
+    printf("ENTER THE PRINCIPLE VALUE ");
+    scanf("%d",&P);
+    printf("\nENTER THE INTEREST RATE ");
+    scanf("%d",&R);
+    printf("\nENTER TH TIME ");
+    scanf("%d",&T);
+    SI=P*R*T;
+    SI=SI/100;
     printf("SIMPLE INTEREST= %f",SI);
-    getch();
+    return;
  }
