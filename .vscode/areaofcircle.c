@@ -2,6 +2,8 @@
 #include<conio.h>
  void main()
  {
-    float p=3.14,r,a ;
+    float pie=3.14,radius,area ;
    
     printf("ENTER THE RADIUS ");
+    scanf("%d",&radius);
+    area=
