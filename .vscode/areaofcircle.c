@@ -8,10 +8,5 @@
     scanf("%d",&radius);
     area=pie*radius*radius
     printf("area of circle=%f" area);
-    gat ch();
+    get ch();
  }
-
-
-    
-
-    
