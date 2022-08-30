@@ -5,7 +5,7 @@
     float pie=3.14,radius,area ;
    
     printf("ENTER THE RADIUS ");
-    scanf("%d",&radius);
+    scanf("%f",&radius);
     area=pie*radius*radius;
     printf("area of circle=%f",area);
    return 0;
