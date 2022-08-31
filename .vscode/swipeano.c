@@ -8,4 +8,5 @@
     A=B;
     B=C;
     C=A;
+   printf(" After swapping = %d,%d",&A&B);
  }
