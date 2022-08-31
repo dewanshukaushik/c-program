@@ -3,5 +3,6 @@
  void main()
  {
    int A,B,C;
+   printf( " Enter the two number ");
    
  }
