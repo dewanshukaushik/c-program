@@ -2,12 +2,19 @@
 #include<conio.h>
  void main()
  {
-   int A,B,C;
-   printf( " Enter the two number ");
-   scanf("%d %d",&A,&B);
-    C=A;
-    A=B;
-    B=C;
-   printf(" After swapping: A = %d, B = %d",A,B);
+   int X,Y,TEMP;
+
+     printf(" Enter Value of x = ");
+    scanf("%d", &X);
+
+    printf("\n Enter Value of y = ");
+    scanf("%d", &Y);
+
+    TEMP=X;
+    X=Y;
+    Y=TEMP;
+
+   printf(" \n After swapping: X= %d, Y = %d",X,Y);
+
    getch();
  }
