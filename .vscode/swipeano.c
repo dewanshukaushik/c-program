@@ -7,5 +7,5 @@
    scanf("%d %d",&A,&B);
     A=B;
     B=C;
-    
+    C=A;
  }
