@@ -5,4 +5,7 @@
    int A,B,C;
    printf( " Enter the two number ");
    scanf("%d %d",&A,&B);
+    A=B;
+    B=C;
+    
  }
