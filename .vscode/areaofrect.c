@@ -1,5 +1,5 @@
 
-#include<stdio.h
+#include<stdio.h>
 #include<conio.h>
  
 int main() {
@@ -14,5 +14,5 @@ int main() {
    area = length * breadth;
    printf("\nArea of Rectangle : %d", area);
  
-   
+   return (0);
 }
