@@ -3,5 +3,5 @@
 void main()
 {
     int  l,b,h,area;
-    printf
+    printf("Enter the Lenght");
 }
