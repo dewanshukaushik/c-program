@@ -1,7 +1,17 @@
 #include<stdio.h>
 #include<conio.h>
-void main()
+int main()
 {
-    int  l,b,h,area;
-    printf("Enter the Lenght");
+	
+	float length,breadth,height,volume;
+	printf("enter length : ");
+	scanf("%f",&length);
+	printf("enter breadth : ");
+	scanf("%f",&breadth);
+	printf("enter height : ");
+	scanf("%f",&height);
+   
+	volume=length*breadth*height;
+	printf("VOC: %f\n",volume);
+	return 0;
 }
