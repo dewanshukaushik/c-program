@@ -12,6 +12,7 @@ struct Node {
 void create() {
     struct Node * t, * last = NULL;
     int num, i;
+    
 
     printf("Enter number of terms: ");
     scanf("%d", & num);
