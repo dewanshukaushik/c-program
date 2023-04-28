@@ -17,7 +17,7 @@ void main()
         {
         case 1:
             if (top == Max - 1)
-                printf("\nOverflow");-----------------------
+                printf("\nOverflow");
             else
             {
                 printf("\nEnter element ");
