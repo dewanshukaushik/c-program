@@ -1,21 +1,28 @@
- #include<stdio.h>
- #include<math.h>
-int fun(int n,int x)
-{
-    if(x==0&&x==1)
-    return 1;
-    else 
-    return(n*fun(n,x-1));
-
-}
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
 void main()
-{int fun(int,int);
-int n,f,x;
-printf("enter the number ");
-scanf("%d",&n);
-printf("enter the power ");
-scanf("%d",&x);
+{
+    int num, power, res;
+    int power1(int, int);
+    //clrscr();
+    printf("Enter number: ");
+    scanf("%d", &num);
+    printf("Enter Power: ");
+    scanf("%d", &power);
+    res = power1(num, power);
+    printf("%d^%d=%d", num, power, res);
+    getch();
+}
 
-    f=fun(n,x);
-    printf("%d",f);
+int power1(int num, int power)
+{
+    if (power == 0)
+    {
+        return 1;
+    }
+    else
+    {
+        return ((num) * (power1(num, power - 1)));
+    }
 }
