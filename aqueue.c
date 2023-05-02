@@ -3,13 +3,13 @@
 #include <stdlib.h>
 void main()
 {
-    void enqueue(int [], int,int , int , int );
-    void dequeue(int [], int,int  , int , int );
+    void enqueue(int [], int,int* , int* , int );
+    void dequeue(int [], int,int*  , int* , int );
     int ch, item,n;
     int front,rear;
      front=rear=-1;
-    printf("enter the size");
-    scanf("%d",&n);
+    // printf("enter the size");
+    // scanf("%d",&n);
     int q[20];
     while (1)
     {
@@ -38,33 +38,34 @@ void enqueue(int q[], int n ,int *front, int *rear, int item)
     printf("enter the item");
     scanf("%d",&item);  
 
-    if ((front == 0 && rear == n - 1) || (front == rear + 1))
+    if (((*front) == 0 && (*rear) == n - 1) || ((*front) == (*rear) + 1))
         printf("overflow");
     else
     {
-        if (front == -1)
-            front = rear = 0;
-        else if (rear == n - 1)
-            rear = 0;
+        if ((*front) == -1)
+            (*front) = (*rear) = 0;
+        else if (*rear == n - 1)
+            (*rear) = 0;
         else
-            rear++;
+            (*rear)++;
     }
-    q[rear] = item;
+    q[*rear] = item;
 }
 void dequeue(int q[], int n, int *front, int *rear, int item)
 { 
-    if (front == -1)
+    if (*front == -1)
         printf("underflow");
     else
     {
-        if (front == rear)
-            front = rear = -1;
-        else if (front == n - 1)
-            front = 0;
+        if ((*front) == *rear)
+            *front = *rear = -1;
+        else if ((*front) == n - 1)
+            (*front) = 0;
         else
-            front++;
+            (*front)++;
     }
-    item = q[front];
+    item = q[*front];
+    printf("%d",item);
 }
 
 
