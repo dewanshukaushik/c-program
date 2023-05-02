@@ -1,28 +1,31 @@
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
-void enqueue(int q[], int front, int rear, int item);
-void dequeue(int q[], int front, int rear, int item);
 void main()
 {
-    int ch, item,front,rear;
+    void enqueue(int [], int,int , int , int );
+    void dequeue(int [], int,int  , int , int );
+    int ch, item,n;
+    int front,rear;
+     front=rear=-1;
+    printf("enter the size");
+    scanf("%d",&n);
     int q[20];
     while (1)
     {
         printf("\n1.insertion ");
-        printf("\n2. Deletion");
-        printf("\n3. Exit");
+        printf("\n2. Deletion ");
+        printf("\n3. Exit ");
         scanf("%d", &ch);
-        switch (ch)
+        switch(ch)
         {
         case 1:
-        {
-            void enqueue(q[],front,rear,item);
+        {    enqueue(q,n,&front,&rear,item);
             break;
         }
         case 2:
         {
-            void dequeue(q[],front,rear,item);
+            dequeue(q,n,&front,&rear,item);
             break;
         }    
         case 3:
@@ -30,8 +33,10 @@ void main()
         }
     }
 }
-void enqueue(int q[], int front, int rear, int item);
+void enqueue(int q[], int n ,int *front, int *rear, int item)
 { 
+    printf("enter the item");
+    scanf("%d",&item);  
 
     if ((front == 0 && rear == n - 1) || (front == rear + 1))
         printf("overflow");
@@ -46,8 +51,8 @@ void enqueue(int q[], int front, int rear, int item);
     }
     q[rear] = item;
 }
-void dequeue(int q[], int front, int rear, int item);
-{
+void dequeue(int q[], int n, int *front, int *rear, int item)
+{ 
     if (front == -1)
         printf("underflow");
     else
