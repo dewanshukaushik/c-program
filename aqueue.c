@@ -5,7 +5,8 @@ void enqueue(int q[], int front, int rear, int item);
 void dequeue(int q[], int front, int rear, int item);
 void main()
 {
-    int ch, item;
+    int ch, item,front,rear;
+    int q[20];
     while (1)
     {
         printf("\n1.insertion ");
@@ -15,19 +16,23 @@ void main()
         switch (ch)
         {
         case 1:
-            void enqueue(q[], front, rear, item);
+        {
+            void enqueue(q[],front,rear,item);
             break;
+        }
         case 2:
-
-            void dequeue(int q[], int front, int rear, int item);
+        {
+            void dequeue(q[],front,rear,item);
             break;
+        }    
         case 3:
             exit(0);
         }
     }
 }
 void enqueue(int q[], int front, int rear, int item);
-{
+{ 
+
     if ((front == 0 && rear == n - 1) || (front == rear + 1))
         printf("overflow");
     else
@@ -41,7 +46,7 @@ void enqueue(int q[], int front, int rear, int item);
     }
     q[rear] = item;
 }
-oid dequeue(int q[], int front, int rear, int item);
+void dequeue(int q[], int front, int rear, int item);
 {
     if (front == -1)
         printf("underflow");
@@ -56,3 +61,5 @@ oid dequeue(int q[], int front, int rear, int item);
     }
     item = q[front];
 }
+
+
