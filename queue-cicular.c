@@ -8,9 +8,9 @@ void main()
     int ch, item,n;
     int front,rear;
      front=rear=-1;
-    // printf("enter the size");
-    // scanf("%d",&n);
-    int q[20];
+    printf("enter the size");
+    scanf("%d",&n);
+    int q[n];
     while (1)
     {
         printf("\n1.insertion ");
