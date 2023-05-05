@@ -18,7 +18,7 @@ void inputarray(int a[], int n)
     int i;
     printf("Enter the array");
     for (i = 0; i < n; i++)
-    
+
     {
         scanf("%d", &a[i]);
     }
@@ -28,7 +28,7 @@ void insertion_sort(int a[], int n)
     int i, j, temp;
     for (i = 1; i < n; i++)
     {
-        for (j = 0; j < n - i; j++)
+        
         {
             if (a[j] > a[j + 1])
             {
