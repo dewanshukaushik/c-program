@@ -1,10 +1,10 @@
 #include <stdio.h>
-#include <conio.h>
+
 #include <stdlib.h>
 void main()
 {
     void enqueue(int [], int,int* , int* , int );
-    void dequeue(int [], int,int*  , int* , int );
+    void dequeue(int [], int,int*  , int* );
     int ch, item,n;
     int front,rear;
      front=rear=-1;
@@ -25,7 +25,7 @@ void main()
         }
         case 2:
         {
-            dequeue(q,n,&front,&rear,item);
+            dequeue(q,n,&front,&rear);
             break;
         }    
         case 3:
@@ -51,8 +51,10 @@ void enqueue(int q[], int n ,int *front, int *rear, int item)
     }
     q[*rear] = item;
 }
-void dequeue(int q[], int n, int *front, int *rear, int item)
+void dequeue(int q[], int n, int *front, int *rear)
 { 
+    int item=q[*front];
+    int item2;
     if (*front == -1)
         printf("underflow");
     else
@@ -62,10 +64,8 @@ void dequeue(int q[], int n, int *front, int *rear, int item)
         else if ((*front) == n - 1)
             (*front) = 0;
         else
-            (*front)++;
+            *(front)++;
+       printf("%d",item);
     }
-    item = q[*front];
-    printf("%d",item);
+    
 }
-
-
