@@ -1,15 +1,17 @@
 #include <stdio.h>
 #include <conio.h>
-#include<stdlib.h>
+#include <stdlib.h>
 void bubble_sort(int[], int);
-void selection(int [],int);
+void selection(int[], int);
+void insertion_sort(int[], int);
+
 void inputarray(int[], int);
 void outputarray(int[], int);
-int minimum(int [],int,int);
+int minimum(int[], int, int);
 
 void main()
 {
-    int a[20], n,ch;
+    int a[20], n, ch;
     printf("enter the size of array :\n");
     scanf("%d", &n);
     inputarray(a, n);
@@ -17,7 +19,8 @@ void main()
     {
         printf("\n1.bubble sort ");
         printf("\n2. selection ");
-        printf("\n3. Exit ");
+        printf("\n3. insertion ");
+        printf("\n4. Exit ");
         scanf("%d", &ch);
         switch (ch)
         {
@@ -28,10 +31,15 @@ void main()
         }
         case 2:
         {
-            selection(a,n);
+            selection(a, n);
             break;
         }
         case 3:
+        {
+            insertion_sort(a, n);
+            break;
+        }
+        case 4:
             exit(0);
         }
     }
@@ -89,6 +97,22 @@ void selection(int a[], int n)
             a[i] = a[mini];
             a[mini] = temp;
         }
+    }
+    outputarray(a, n);
+}
+void insertion_sort(int a[], int n)
+{
+    int i, key, j;
+    for (i = 1; i < n; i++)
+    {
+        key = a[i];
+        j = i - 1;
+        while (j >= 0 && a[j] > key)
+        {
+            a[j + 1] = a[j];
+            j = j - 1;
+        }
+        a[j + 1] = key;
     }
     outputarray(a, n);
 }

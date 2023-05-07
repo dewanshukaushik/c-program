@@ -10,7 +10,6 @@ void main()
     scanf("%d", &n);
     inputarray(a, n);
     insertion_sort(a, n);
-
     outputarray(a, n);
 }
 void inputarray(int a[], int n)
@@ -25,18 +24,15 @@ void inputarray(int a[], int n)
 }
 void insertion_sort(int a[], int n)
 {
-    int i, j, temp;
-    for (i = 1; i < n; i++)
-    {
-        
-        {
-            if (a[j] > a[j + 1])
-            {
-                temp = a[j];
-                a[j] = a[j + 1];
-                a[j + 1] = temp;
-            }
+    int i, key, j;
+    for (i = 1; i < n; i++) {
+        key = a[i];
+        j = i - 1;
+        while (j >= 0 && a[j] > key) {
+            a[j + 1] = a[j];
+            j = j - 1;
         }
+        a[j + 1] = key;
     }
 }
 

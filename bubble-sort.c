@@ -10,7 +10,6 @@ void main()
     scanf("%d", &n);
     inputarray(a, n);
     bubble_sort(a, n);
-    
     outputarray(a, n);
 }
 void inputarray(int a[], int n)
