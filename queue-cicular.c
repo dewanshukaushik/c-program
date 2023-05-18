@@ -54,7 +54,7 @@ void enqueue(int q[], int n ,int *front, int *rear, int item)
 void dequeue(int q[], int n, int *front, int *rear)
 { 
     int item=q[*front];
-    int item2;
+
     if (*front == -1)
         printf("underflow");
     else
