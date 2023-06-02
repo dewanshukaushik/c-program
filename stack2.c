@@ -3,7 +3,7 @@
 #define MAX_X 5
 #define MAX_Y 5
 int topx=-1;
-int topy=10;
+int topy=MAX_X+MAX_Y;
 
 /*Begin of push_x*/
 void push_x(int *stack)
