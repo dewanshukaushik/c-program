@@ -1,7 +1,8 @@
 {
   "files.associations": {
     "point.C": "cpp",
-    "hello.C": "cpp"
+    "hello.C": "cpp",
+    "fibonacci_recursion.C": "cpp"
   },
   "C_Cpp.codeAnalysis.clangTidy.checks.disabled": [
     "clang-diagnostic-error"
@@ -61,5 +62,6 @@
   ],
   "C_Cpp_Runner.useUndefinedSanitizer": false,
   "C_Cpp_Runner.useLeakSanitizer": false,
-  "C_Cpp_Runner.useLinkTimeOptimization": false
+  "C_Cpp_Runner.useLinkTimeOptimization": false,
+  "C_Cpp_Runner.msvcSecureNoWarnings": false
 }
